@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form & Input</title>
+  </head>
+  <body style="background-color: rgba(161, 81, 16, 0.664)">
+    <form action="process.php">
+      <div>
+        <label for="name"> Name</label><br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter you email"
+        />
+      </div>
+      <div>
+        <label for="message">Message</label><br />
+        <textarea
+          name="message"
+          id="message"
+          rows="3"
+          cols="21"
+          placeholder="Write a message"
+        ></textarea>
+      </div>
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+      <br />
+      <div>
+        <label for="birthdate">Birthdate</label><br />
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+      <br />
+      <!-- radio slelecion -->
+      <div>
+        <label for="membership">Membership</label>
+        <input
+          type="radio"
+          name="membership"
+          value="simple"
+          id="membership"
+          checked
+        />Simple
+        <input
+          type="radio"
+          name="membership"
+          value="standard"
+          id="membership"
+        />Simple
+        <input
+          type="radio"
+          name="membership"
+          value="primium"
+          id="membership"
+        />Primium
+      </div>
+      <br />
+      <!-- check box -->
+      <div>
+        <label for="hobby">My Hobbies</label><br />
+        <input
+          type="checkbox"
+          name="hobby"
+          value="reading"
+          id="hobby"
+        />ReadingBooks
+        <input type="checkbox" name="hobby" value="criket" id="hobby" />Criket
+        <input
+          type="checkbox"
+          name="hobby"
+          value="travel"
+          id="hobby"
+        />Travelling
+      </div>
+      <!-- <input type="button" value="Submit" /> -->
+      <button type="submit">Submit</button>
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>
